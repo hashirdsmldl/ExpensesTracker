@@ -29,6 +29,7 @@ class CategoryBar extends StatelessWidget {
     return LayoutBuilder(
       builder: (BuildContext , BoxConstraints ) {
         return Card(
+          color: Colors.white70,
           margin: const EdgeInsets.all(20),
           elevation: 5,
           child: Row(

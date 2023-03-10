@@ -25,33 +25,17 @@ class MyApp extends StatelessWidget  {
   Widget build(BuildContext context) {
 
 
-    return MaterialApp(
+    return  MaterialApp(
       title: 'Personal Expenses',
-      theme: ThemeData(
-          fontFamily: 'Quicksand',
-          textTheme: ThemeData.light().textTheme.copyWith(
-            titleMedium: const TextStyle(
-              fontFamily: 'OpenSans',
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-            ),
-            labelLarge: const TextStyle(color: Colors.white),
-          ),
-          appBarTheme: AppBarTheme(
-            toolbarTextStyle: ThemeData.light().textTheme.copyWith(
-              titleMedium: const TextStyle(
-                fontFamily: 'OpenSans',
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ).bodyMedium, titleTextStyle: ThemeData.light().textTheme.copyWith(
-              titleMedium: const TextStyle(
-                fontFamily: 'OpenSans',
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ).titleLarge,
-          ), colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple).copyWith(secondary: Colors.amber)),
+      theme: ThemeData.dark(useMaterial3:true ),
+
+
+
+
+
+
+
+
       home: const MyHomePage(),
     );
   }
@@ -160,6 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
         0.4;
     return Scaffold(
       appBar: appBar,
+
       body: SingleChildScrollView(
 
         child: Column(
